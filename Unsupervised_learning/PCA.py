@@ -35,3 +35,10 @@ clf.fit(X_train, y_train)
 from sklearn.metrics import confusion_matrix, accuracy_score
 y_pred = clf.predict(X_test)
 cm = confusion_matrix(y_test, y_pred)
+print(cm)
+ac = accuracy_score(y_test, y_pred)
+print(ac)
+
+
+
+
