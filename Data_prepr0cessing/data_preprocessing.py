@@ -1,3 +1,5 @@
+# Preprocessing is where  we check anything missing or need to modified in your data file.  
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -51,7 +53,7 @@ print(y_test)
 # feature scaling done after the splitting to prevent test set data leakage
 # to prevent some features dominating the others 
 # most ML models don't need scaling
-# mostly either Standardisation or normalisation sre used
+# mostly either Standardisation or normalisation are used
 ''' 
 X_stand = [X-mean(X)]/std.dev(X)
 X_norm = [X-min(X)]/[max(X)-min(x)]
