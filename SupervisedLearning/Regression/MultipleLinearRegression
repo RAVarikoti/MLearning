@@ -33,7 +33,7 @@ y = data.iloc[:, -1].values
 # encoding the categorical data
 
 from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder # A one hot encoding is a representation of categorical variables as binary vectors.
 
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [3])], remainder = 'passthrough') # convert state names into numbers
 x = np.array(ct.fit_transform(x)) # the state column converted into float and moved to columns 0 1 &2
