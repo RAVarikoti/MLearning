@@ -55,7 +55,7 @@ plt.show()
 
 # function to load the dataset and split the input variables into inputs and output variables and use a label encoder to ensure class labels are numbered sequentially
 def load_dataset (full_path):
-    df1 = pd.read_csv('/home/varikord/Projects/python_scripts/MACHINE_LEARNING/machinelearningmastery/ecoli.csv', header=None)
+    df1 = pd.read_csv('~/Projects/python/MACHINE_LEARNING/ecoli.csv', header=None)
     # to remove datavalues from the two classes with lower #
     df1 = df1[df1[7] != 'imS']
     df1 = df1[df1[7] != 'imL']
